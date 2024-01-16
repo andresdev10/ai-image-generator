@@ -6,6 +6,7 @@
     margin-top: 80px;
     margin-bottom: 20px;
     gap: 30px;
+    width: 100%;
 }
 .header {
     font-size: 70px;
@@ -67,12 +68,13 @@
     .ai-image-generator {
         margin-top: 40px;
         margin-bottom: 10px;
+        width: 590px;
     }
 
     .header {
         font-size: 40px;
         padding-bottom: 20px;
-        margin-left: 50px;
+        margin-left: 0px;
     }
 
     .image-loading img {
@@ -82,7 +84,7 @@
     .search-box {
         width: 100%;
         padding: 10px;
-        margin-left: 30px;
+        margin-left: 10px;
     }
 
     .search-input {
@@ -97,7 +99,7 @@
 
     .image {
         width: 400px;
-        margin-left: 99px;
+        margin-left: -145px;
         border-radius: 5px;
     }
 }
