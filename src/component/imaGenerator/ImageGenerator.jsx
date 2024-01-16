@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react'
 import './ImageGenerator.css'
 import default_image from '../../assets/default_image.svg'
 
+
 const ImageGenerator = () => {
     const [image_url, setImage_url] = useState("/")
     let inputRef = useRef(null)
@@ -16,7 +17,7 @@ const ImageGenerator = () => {
                headers: {
                 "Content-Type": "application/json",
                 Authorization:
-                "Bearer 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",
+                `Bearer ${import.meta.env.VITE_API_KEY_OPENAI}`,
                 "User-Agent": "Chrome",
 
                },
@@ -30,6 +31,7 @@ const ImageGenerator = () => {
         let data = await response.json()
         let data_array = data.data
         setImage_url(data_array[0].url)
+        
     }
 
   return (
